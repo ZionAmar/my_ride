@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <link rel="stylesheet" href="/css/my_ride_styles.css" />
+    <link
+            rel="icon"
+            href="https://www.drivencarguide.co.nz/media/fwnpg2w1/209185116_l_normal_none.jpg?width=1028&rnd=133384649079030000"
+            type="image/jpg"
+            sizes="16x16 32x32 48x48 64x64"
+    />
+    <title>מי בטרמפ</title>
+</head>
+<body>
+<header>
+    <span id="exitTime" class="topBar" onclick="updateExitTime()"></span>
+    <span id="logo" class="topBar">? מי בטרמפ</span>
+    <span class="topBar" id="datetime"></span>
+</header>
+<main>
+    <div id="frontCar">
+        <span class="person" id="driver" onclick="addDriver(this)">נהג/ת</span>
+        <span class="person" id="passenger1" onclick="addName(this)"
+        >הוספת נוסע/ת</span
+        >
+    </div>
+    <div id="backCar">
+        <span class="person" id="passenger2" onclick="addName(this)"
+        >הוספת נוסע/ת</span
+        >
+        <span class="person" id="passenger3" onclick="addName(this)"
+        >הוספת נוסע/ת</span
+        >
+        <span class="person" id="passenger4" onclick="addName(this)"
+        >הוספת נוסע/ת</span
+        >
+    </div>
+</main>
+<footer>&copy; Zion Amar</footer>
+<script src="/js/mt_ride_script.js"></script>
+</body>
+</html>
