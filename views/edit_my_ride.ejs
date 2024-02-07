@@ -1,0 +1,43 @@
+<%-include("top_page.ejs")%>
+    <link rel="stylesheet" href="/css/edit_my_ride.css">
+<title>edit my ride</title>
+</head>
+<body>
+<h1>הוספת נסיעה</h1>
+<form id="rideForm">
+    <!-- <label for="rideName">שם הנסיעה:</label> -->
+    <input
+            type="text"
+            id="rideName"
+            placeholder="שם הנסיעה:"
+            name="rideName"
+            required
+    />
+
+    <!-- <label for="exitTime">שעת יציאה:</label> -->
+    <input
+            type="time"
+            id="exitTime"
+            placeholder="שעת יציאה:"
+            name="exitTime"
+            required
+    />
+
+    <!-- <label for="password">סיסמה:</label> -->
+    <input
+            type="password"
+            id="password"
+            placeholder="סיסמה:"
+            name="password"
+            required
+    />
+
+    <input type="submit" value="הוסף נסיעה" />
+</form>
+
+<div class="rides-list">
+    <h2>רשימת הנסיעות</h2>
+    <div id="rides"></div>
+</div>
+<script src="/js/edit_my_ride_script.js"></script>
+<%-include("bottom_page.ejs")%>

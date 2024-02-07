@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    /*grid-template-areas: "header" "main" "main" "main" "switch" "footer";*/
+    font-family: Arial, sans-serif;
+    background-color: rgb(230, 237, 254);
+    margin: 0;
+    /* text-align: center; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+     flex-direction: column;
+}
+#logo {
+    grid-area: header;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #888;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 300%;
+    color: rgb(195, 219, 255);
+    /* position: fixed; */
+    /* top: 0; */
+    /* padding: 20px; */
+}
+#loginCard {
+    grid-area: main;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+#loginCard header {
+    background-color: #4c63af;
+    color: #fff;
+    padding: 7.5%;
+}
+
+#loginCard form {
+    display: flex;
+    flex-direction: column;
+    padding: 7.5%;
+}
+
+input {
+    margin: 3% 0;
+    padding: 3%;
+    font-size: 100%;
+    direction: rtl;
+}
+
+button {
+    margin-top: 7.5%;
+    padding: 3% 7.5%;
+    font-size: 100%;
+    cursor: pointer;
+    background-color: #4c63af;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#colorSwitch {
+    grid-area: switch;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #4c63af;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#colorSwitch::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #af4c95;
+    transition: width 0.3s ease;
+}
+
+#colorSwitch.left::before {
+    width: 100%;
+}
+
+#colorSwitch.right::before {
+    width: 0;
+}
+
+/*@media only screen and (min-width: 900px) {*/
+/*    #loginCard {*/
+/*        position: fixed;*/
+/*        right: 18%;*/
+/*        top: 32%;*/
+/*    }*/
+/*    #logo {*/
+/*        font-size: 500%;*/
+/*    }*/
+/*}*/

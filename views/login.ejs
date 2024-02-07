@@ -1,0 +1,22 @@
+<%-include("top_page.ejs")%>
+    <link rel="stylesheet" href="/css/login.css">
+<title>login</title>
+</head>
+
+<body>
+<div id="logo">? מי בטרמפ</div>
+<div id="loginCard">
+    <header>
+        <h1>דף כניסה</h1>
+    </header>
+    <form>
+        <input type="text" id="nameInput" placeholder="שם" />
+        <input type="tel" id="phoneInput" placeholder="טלפון" />
+        <button class="button" onclick="loginAsDriver()">אני נהג/ת</button>
+        <button class="button" onclick="loginAsPassenger()">אני נוסע/ת</button>
+    </form>
+</div>
+<div id="colorSwitch" onclick="toggleColor()">שנה צבע</div>
+
+<script src="/js/login_script.js"> </script>
+<%-include("bottom_page.ejs")%>

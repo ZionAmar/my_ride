@@ -14,4 +14,8 @@ app.listen(port, () => {
     console.log(`Now listening on port http://localhost:${port}`);
 });
 const my_ride =require('./routers/my_ride');
-app.use('/my_ride',my_ride);
+app.use('/',my_ride);
+const login =require('./routers/login');
+app.use('/login',login);
+const edit =require('./routers/edit_my_ride');
+app.use('/edit',edit);
